@@ -161,15 +161,16 @@ the stack. Use a for loop to iterate the “blogs” stack, pop the top one
 off and println the blog’s teaser. Println the count of items in the stack.
 **/
 
-class Stack
+class Stack<T>
 {
-    var blogPostList : [<T>] = []
+    
+    var blogPostList = [T]()
 
-    func push<>(post:T)
+    func push(post:T)
     {
         blogPostList.append(post)
     }
-    func pop()->(BlogPost?)
+    func pop()->(T?)
     {
         var lastBlog = blogPostList.last
         blogPostList.removeLast()
@@ -182,7 +183,8 @@ class Stack
     }
 }
 
-let blogs = Stack()
+
+let blogs = Stack<BlogPost>()
 for bl in blogPosts{
     
     blogs.push(bl)
