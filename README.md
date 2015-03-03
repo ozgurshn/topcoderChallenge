@@ -9,7 +9,7 @@
 – Create a random function that returns a tuple. 
 
 - Create Struct
-- 
+
 – Create an array
 
 - Create stack using a struct with Generics
