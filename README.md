@@ -1,4 +1,4 @@
-# TopCode Swift Playground Challenge
+# TopCoder Swift Playground Challenge
 
 Create a constant array of String
 
